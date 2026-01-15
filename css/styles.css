@@ -16,12 +16,12 @@ body {
 }
 ::selection {
 	color: #fff;
-	background: #FF7A00;
+	background: #E6F0FA;
 }
 
 ::-moz-selection {
  color: #fff;
- background: #FF7A00;
+ background: #E6F0FA;
 }
 p {
 	color: #858585;
@@ -58,7 +58,7 @@ p {
 	background: rgba(255,255,255,0.35);
 }
 a {
-	color: #FF7A00;
+	color: #E6F0FA;
 	text-decoration: none;
 	text-shadow: none;
 	-webkit-transition: all 0.2s linear;
@@ -79,7 +79,7 @@ a:hover {
 	background: #DF6B00;
 }
 .btn-primary {
-	background: #FF7A00;
+	background: #E6F0FA;
 }
 .form-control {
 	border-radius: 0px;
@@ -101,7 +101,7 @@ a:hover {
 	bottom: 20px;
 	right: 20px;
 	z-index: 5;
-	background: #FF7A00;
+	background: #E6F0FA;
 }
 .topHome .fa-2x {
 	font-size: 20px;
@@ -125,8 +125,8 @@ h2 {
 	top: 0px;
 }
 .navbar-inverse .navbar-toggle {
-	border-color: #FF7A00;
-	background-color: #FF7A00;
+	border-color: #E6F0FA;
+	background-color: #E6F0FA;
 }
 .header .navbar {
 	margin: 0;
@@ -136,7 +136,7 @@ h2 {
 /*background-color: #FF7A00;*/;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background: #FF7A00;
+	background: #E6F0FA;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 	color: #fff;
@@ -151,7 +151,7 @@ h2 {
 	color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #FF7A00;
+	color: #E6F0FA;
 	background: none;
 }
 .navbar-toggle {
@@ -165,7 +165,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 /*.carousel-inner*/
 #myCarousel {
 	margin-top: 50px;
-	border-bottom: 4px solid #FF7A00;
+	border-bottom: 4px solid #E6F0FA;
 }
 .carousel-inner > .item {
 }
@@ -192,13 +192,13 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 .actionPanel {
 	padding: 25px 0;
-	background: #FF7A00;
+	background: #E6F0FA;
 }
 .actionPanel h3 {
 	margin: 0px;
 }
 .circle {
-	background: #FF7A00;
+	background: #E6F0FA;
 	height: 60px;
 	width: 60px;
 	border-radius: 35px;
@@ -239,7 +239,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	border-radius: 5px;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #FF7A00;
+	color: #E6F0FA;
 	background: none;
 }
 .navbar-nav > li:hover > a {
@@ -266,7 +266,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	font-weight: 200;
 }
 .page-section h2 {
-	color: #FF7A00;
+	color: #E6F0FA;
 }
 .page-section p {
 	font-size: 1.1em;
@@ -276,7 +276,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	background: rgb(44, 44, 44);
 }
 .darkBg .fa {
-	color: #FF7A00;
+	color: #E6F0FA;
 }
 /*--- Banner ----*/
 .banner-container {
@@ -383,7 +383,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 /*Intro Content*/
 #introText {
 	padding: 50px 0;
-	background: #FF7A00;
+	background: #E6F0FA;
 }
 #introText h1 {
 	font-size: 40px;
@@ -519,7 +519,7 @@ min-height:200px;
 }
 .experience-details .icon-block i {
 	font-size: 60px;
-	color: #FF7A00;
+	color: #E6F0FA;
 	margin: 8px 0 0;
 }
 .experience-details span {
@@ -527,7 +527,7 @@ min-height:200px;
 	color: #000;
 }
 .progress-bar {
-	background-color: #FF7A00;
+	background-color: #E6F0FA;
 }
 /* Services
     -------------------------------------------------*/
@@ -567,7 +567,7 @@ min-height:200px;
 .team-member .member-img img {
 	max-width: 250px;
 	margin: 0 auto;
-	border: 1px solid #FF7A00;
+	border: 1px solid #E6F0FA;
 }
 .team-member h4 {
 	font-size: 19px;
@@ -789,7 +789,7 @@ footer {
 	background: #fff;
 }
 .social a:hover {
-	color: #FF7A00;
+	color: #E6F0FA;
 }
 .social a {
 	font-size: 23px;
@@ -1033,48 +1033,4 @@ nav#filter li {
 	-ms-user-select: none;
 	user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-/* ===============================
-   PALETTE BLU / AZZURRO CALMO
-   =============================== */
-
-body {
-  background-color: #E6F0FA;   /* azzurro molto chiaro */
-  color: #2D3748;              /* testo */
-}
-
-/* Titoli */
-h1, h2, h3, h4 {
-  color: #1A365D;              /* blu scuro elegante */
-}
-
-/* Link */
-a {
-  color: #2B6CB0;
-}
-
-a:hover {
-  color: #1A365D;
-}
-
-/* Sezioni principali */
-section {
-  padding: 60px 0;
-}
-
-/* About */
-#aboutUs {
-  background-color: white;
-}
-
-/* Pulsanti (se presenti) */
-.btn, button {
-  background-color: #2B6CB0;
-  color: white;
-  border: none;
-}
-
-.btn:hover, button:hover {
-  background-color: #1A365D;
 }
