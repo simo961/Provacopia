@@ -1034,3 +1034,47 @@ nav#filter li {
 	user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+/* ===============================
+   PALETTE BLU / AZZURRO CALMO
+   =============================== */
+
+body {
+  background-color: #E6F0FA;   /* azzurro molto chiaro */
+  color: #2D3748;              /* testo */
+}
+
+/* Titoli */
+h1, h2, h3, h4 {
+  color: #1A365D;              /* blu scuro elegante */
+}
+
+/* Link */
+a {
+  color: #2B6CB0;
+}
+
+a:hover {
+  color: #1A365D;
+}
+
+/* Sezioni principali */
+section {
+  padding: 60px 0;
+}
+
+/* About */
+#aboutUs {
+  background-color: white;
+}
+
+/* Pulsanti (se presenti) */
+.btn, button {
+  background-color: #2B6CB0;
+  color: white;
+  border: none;
+}
+
+.btn:hover, button:hover {
+  background-color: #1A365D;
+}
