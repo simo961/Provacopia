@@ -1034,3 +1034,29 @@ nav#filter li {
 	user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+/* Riquadri con immagine sopra e testo sotto */
+.box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.box h3 {
+  color: #355C7D;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 15px;
+  color: #2D3748;
+}
