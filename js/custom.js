@@ -149,3 +149,11 @@ $('document').ready(function () {
 			  $('#filter .current').trigger('click');
 		});
 });
+<script>
+$(document).ready(function() {
+    // Se non siamo sulla homepage
+    if (!window.location.href.includes("index.html")) {
+        $('.header').addClass('addBg'); // forza la barra nera
+    }
+});
+</script>
