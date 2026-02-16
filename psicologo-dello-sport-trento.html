@@ -29,15 +29,8 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
 <script>
-$(window).on('scroll', function() {
-    var triggerPoint = $('#sport').offset().top - 80; // punto in cui cambia la navbar
-    var scrollPos = $(window).scrollTop();
-
-    if (scrollPos >= triggerPoint) {
-        $('.header').addClass('fixed'); // usa la stessa classe che la homepage aggiunge
-    } else {
-        $('.header').removeClass('fixed');
-    }
+$(document).ready(function() {
+    $('.header').addClass('addBg');
 });
 </script>
 
