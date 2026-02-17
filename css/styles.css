@@ -1086,3 +1086,8 @@ nav#filter li {
 .box-link:hover h3 {
     color: #007bff;
 }
+.box-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
