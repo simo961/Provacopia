@@ -1069,3 +1069,20 @@ nav#filter li {
 #ambiti img {
     border-radius: 8px;
 }
+/*temporaneo*/
+.box-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.box-link:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.box-link:hover h3 {
+    color: #007bff;
+}
