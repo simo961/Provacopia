@@ -1074,9 +1074,16 @@ nav#filter li {
     display: block;
     text-decoration: none;
     color: inherit;
-    padding: 20px;
     transition: all 0.3s ease;
+    padding: 0;   /* tolto il padding dal link */
 }
+
+.box-link h3,
+.box-link p,
+.box-link .text-center {
+    padding: 20px;  /* padding solo al testo e al bottone */
+}
+
 
 .box-link:hover {
     text-decoration: none;
