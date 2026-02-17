@@ -1154,3 +1154,8 @@ color: #333!important; /* testo grigio scuro */
     color: #ccc !important;           /* scritta grigio chiaro al passaggio */
     background-color: rgba(255,255,255,0.05) !important; /* leggero highlight */
 }
+/* Tendina trasparente quando navbar trasparente */
+.navbar-inverse .navbar-nav .dropdown-menu {
+    background-color: transparent; /* default trasparente */
+    border: none !important;
+    box-shadow: none !important;
