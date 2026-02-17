@@ -1135,3 +1135,22 @@ color: #333!important; /* testo grigio scuro */
     background: #356a9b; /* blu più scuro per hover */
     color: #fff;
 }
+/*tendina prova*/
+/* Dropdown della navbar */
+.navbar-inverse .navbar-nav .dropdown-menu {
+    background-color: #000; /* nero */
+    border: none;           /* niente bordo bianco */
+    box-shadow: none;       /* niente ombra */
+}
+
+/* Link dentro la tendina */
+.navbar-inverse .navbar-nav .dropdown-menu > li > a {
+    color: #fff;           /* scritta bianca */
+    padding: 10px 20px;
+}
+
+/* Hover sui link della tendina */
+.navbar-inverse .navbar-nav .dropdown-menu > li > a:hover {
+    color: #ccc;           /* scritta grigio chiaro al passaggio */
+    background-color: rgba(255,255,255,0.05); /* leggero highlight */
+}
