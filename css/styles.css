@@ -1060,3 +1060,12 @@ nav#filter li {
   font-size: 15px;
   color: #2D3748;
 }
+/* ===== SEZIONE AMBITI SPORT ===== */
+
+#ambiti h3 {
+    margin-top: 0;
+}
+
+#ambiti img {
+    border-radius: 8px;
+}
