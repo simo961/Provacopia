@@ -1089,5 +1089,5 @@ nav#filter li {
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 -2px 8px rgba(255, 255, 255, 0.2); /* effetto “alzato” */
     background: linear-gradient(145deg, #00a3ff, #005bb5); /* leggero cambio di gradiente */
-color: #333; /* testo grigio scuro */
+color: #333!important; /* testo grigio scuro */
 }
