@@ -1138,19 +1138,19 @@ color: #333!important; /* testo grigio scuro */
 /*tendina prova*/
 /* Dropdown della navbar */
 .navbar-inverse .navbar-nav .dropdown-menu {
-    background-color: #000; /* nero */
-    border: none;           /* niente bordo bianco */
-    box-shadow: none;       /* niente ombra */
+    background-color: #000 !important; /* nero */
+    border: none !important;           /* niente bordo bianco */
+    box-shadow: none !important;       /* niente ombra */
 }
 
 /* Link dentro la tendina */
 .navbar-inverse .navbar-nav .dropdown-menu > li > a {
-    color: #fff;           /* scritta bianca */
+    color: #fff !important;           /* scritta bianca */
     padding: 10px 20px;
 }
 
 /* Hover sui link della tendina */
 .navbar-inverse .navbar-nav .dropdown-menu > li > a:hover {
-    color: #ccc;           /* scritta grigio chiaro al passaggio */
-    background-color: rgba(255,255,255,0.05); /* leggero highlight */
+    color: #ccc !important;           /* scritta grigio chiaro al passaggio */
+    background-color: rgba(255,255,255,0.05) !important; /* leggero highlight */
 }
