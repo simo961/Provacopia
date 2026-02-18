@@ -118,97 +118,92 @@
   <div class="container">
     <div class="row">
       <div class="heading"> 
-        <h2>Let's Keep In Touch!</h2>
-        <p>Thank you for visiting my profile. If you would like to get into contact with me, please fill out the form below.</p>
+        <h2>Contattami</h2>
+        <p>Se vuoi metterti in contatto, compila il modulo qui sotto e ti risponderò il prima possibile.</p>
       </div>
     </div>
     <div class="row mrgn30">
-      <form id="contactfrm" role="form">
-        <div class="col-sm-4">
+      <div class="col-md-8">
+        <form id="contactfrm" role="form">
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Inserisci il tuo nome" required>
+          </div>
+          <div class="form-group">
+            <label for="surname">Cognome</label>
+            <input type="text" class="form-control" name="surname" id="surname" placeholder="Inserisci il tuo cognome" required>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Inserisci la tua email" required>
           </div>
-        </div>
-        <div class="col-sm-4">
           <div class="form-group">
-            <label for="comments">Comments</label>
-            <textarea name="comment" class="form-control" id="comments" rows="5" placeholder="Enter your message…" required></textarea>
+            <label for="phone">Cellulare</label>
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Inserisci il tuo numero di cellulare" required>
           </div>
-
-          <!-- Checkbox Privacy -->
           <div class="form-group">
-            <input type="checkbox" id="privacyCheck" required>
-            <label for="privacyCheck">Accetto l'informativa sulla privacy</label>
+            <label for="comment">Messaggio</label>
+            <textarea name="comment" class="form-control" id="comment" rows="5" placeholder="Scrivi il tuo messaggio" required></textarea>
           </div>
-
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="privacyCheck" required>
+            <label class="form-check-label" for="privacyCheck">Accetto l'informativa sulla privacy</label>
+          </div>
           <button type="submit" class="btn btn-lg btn-primary">Invia</button>
-
-          <!-- Messaggio di conferma -->
-          <div id="formMessage" style="margin-top:15px; display:none; font-weight:bold;"></div>
-        </div>
-      </form>
-      <div class="col-sm-4">
-        <h4>Address:</h4>
-        <address>
-          Steve Smith<br>
-          134 Stilla. Tae., 414515<br>
-          Leorislon, SA 02434-34534 USA <br>
-        </address>
-        <h4>Phone:</h4>
-        <address>
-          12345-49589-2<br>
-        </address>
+          <div class="result mt-3" style="display:none; color:green;"></div>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <h4>Contatti diretti:</h4>
+        <p>Email: tuaemail@example.com</p>
+        <p>Cellulare: +39 123 456 789</p>
+        <p>Indirizzo: Via Esempio 1, Città, CAP</p>
       </div>
     </div>
   </div>
 </section>
 
 <script>
-// Sostituisci con la tua email Formsubmit
-const form = document.getElementById('contactfrm');
-const messageBox = document.getElementById('formMessage');
+  const form = document.getElementById('contactfrm');
+  const resultDiv = form.querySelector('.result');
 
-form.addEventListener('submit', function(e){
-  e.preventDefault();
+  form.addEventListener('submit', function(e){
+    e.preventDefault(); // blocca il comportamento predefinito
 
-  const privacy = document.getElementById('privacyCheck');
-  if(!privacy.checked){
-    alert('Devi accettare la privacy per inviare il modulo.');
-    return;
-  }
-
-  const formData = new FormData(form);
-  const endpoint = 'https://formsubmit.co/siroxe4089@bitoini.com';
-
-  fetch(endpoint, {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
+    const privacy = document.getElementById('privacyCheck');
+    if(!privacy.checked){
+      alert('Devi accettare l\'informativa sulla privacy prima di inviare.');
+      return;
     }
-  }).then(response => {
-    if(response.ok){
-      messageBox.style.display = 'block';
-      messageBox.style.color = 'green';
-      messageBox.textContent = 'Grazie! Il tuo messaggio è stato inviato.';
-      form.reset(); // pulisce i campi
-    } else {
-      messageBox.style.display = 'block';
-      messageBox.style.color = 'red';
-      messageBox.textContent = 'Oops! Qualcosa è andato storto. Riprova più tardi.';
-    }
-  }).catch(error => {
-    messageBox.style.display = 'block';
-    messageBox.style.color = 'red';
-    messageBox.textContent = 'Errore di invio. Controlla la tua connessione e riprova.';
+
+    const formData = new FormData(form);
+    // inserisci qui il tuo indirizzo email di Formsubmit
+    const endpoint = 'https://formsubmit.co/tuoindirizzo@email.com';
+
+    fetch(endpoint, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if(response.ok){
+        resultDiv.style.display = 'block';
+        resultDiv.textContent = 'Messaggio inviato! Ti risponderò al più presto.';
+        form.reset();
+      } else {
+        resultDiv.style.display = 'block';
+        resultDiv.style.color = 'red';
+        resultDiv.textContent = 'Si è verificato un errore. Riprova più tardi.';
+      }
+    }).catch(error => {
+      resultDiv.style.display = 'block';
+      resultDiv.style.color = 'red';
+      resultDiv.textContent = 'Si è verificato un errore. Riprova più tardi.';
+    });
   });
-});
 </script>
+
 
 
 
