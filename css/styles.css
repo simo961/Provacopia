@@ -1341,13 +1341,9 @@ color: #333!important; /* testo grigio scuro */
   }
 
 }
-/* contatti iinziale wz */
-.whatsapp {
-  width: 60px;
-  height: auto;
-}
+
 /* wz contatti */
 .whatsapp-img {
-  width: 80%;   /* prova 70%, 60% ecc */
+  width: 70%;   /* prova 70%, 60% ecc */
   height: auto;
 }
