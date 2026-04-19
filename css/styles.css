@@ -1346,3 +1346,8 @@ color: #333!important; /* testo grigio scuro */
   width: auto;
   height: 22px;
 }
+/* wz contatti */
+.whatsapp-img {
+  width: 80%;   /* prova 70%, 60% ecc */
+  height: auto;
+}
