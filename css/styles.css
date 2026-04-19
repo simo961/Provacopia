@@ -1341,10 +1341,10 @@ color: #333!important; /* testo grigio scuro */
   }
 
 }
-/* bottone menu wz */
-.whatsapp img {
-  width: auto;
-  height: 20px;
+/* contatti iinziale wz */
+.whatsapp {
+  width: 40px;
+  height: auto;
 }
 /* wz contatti */
 .whatsapp-img {
