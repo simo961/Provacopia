@@ -1345,4 +1345,5 @@ color: #333!important; /* testo grigio scuro */
 .navbar .whatsapp-nav img {
   width: auto;
   height: 24px;
+	vertical-align: middle;
 }
